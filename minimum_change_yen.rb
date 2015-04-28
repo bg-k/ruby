@@ -4,13 +4,13 @@ c = [6]
 i = 0
 maisu = 0
 sum = 0
- 
+
 print coin.size
- 
- 
+
+
 puts "input total yen"
 yen = gets.chomp.to_i
- 
+
 puts "input the amount of each coin"
 print "500 > "
 c[0] = gets.chomp.to_i
@@ -31,7 +31,7 @@ print "1 > "
 c[5] = gets.chomp.to_i
  
  
-while i < coin.size do
+coin.size.times do |i|
   maisu = yen / coin[i]
  
   if maisu > c[i]
@@ -39,7 +39,7 @@ while i < coin.size do
   end
  
   yen = yen - (maisu * coin[i])
-  sum = sum + maisu
+  sum += maisu
   c[i] = maisu
   i += 1
 end

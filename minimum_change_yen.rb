@@ -5,8 +5,14 @@ i = 0
 maisu = 0
 sum = 0
 
-print coin.size
 
+
+
+
+
+
+
+print coin.size
 
 puts "input total yen"
 yen = gets.chomp.to_i
